@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <img class="logo-alura" src="./imagenes/logo.svg" alt="Logo de alura">
+    </header> 
+
+    <main>
+        <section class="parte-encriptador">
+            <textarea class="texto-encriptar" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="aviso-encriptador">
+                <img src="./imagenes/imagen-informacion.svg" alt="Icono de informacion" class="img-informacion">
+                <p class="texto-informacion">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="contenedor-botones">
+                <button type="submit" class="boton-encriptar">Encriptar</button>
+                <button type="submit" class="boton-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="parte-encriptado">
+            <div class="contenedor-encriptado">
+                <img src="./imagenes/Muñeco.svg" alt="Dibujo de un muñeco" class="img-muneco">
+                <h5 class="texto-no-encontrado">Ningún mensaje fue encontrado</h5>
+                <p class="ingresa-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <textarea type="mensaje" class="evaluar" readonly></textarea>
+            <button type="submit" class="boton-copiar">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <h6 class="desarrollado-por">Desarrollado por William Moreno para Alura Latam</h6>    
+    </footer>
+
+    <script src="./encriptador.js"></script>
+
+</body>
+</html>
